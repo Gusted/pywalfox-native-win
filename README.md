@@ -1,5 +1,7 @@
-# Pywalfox - Native messaging host
+# Pywalfox - Windows 10 Port
 
-This is the native application used by the Pywalfox addon providing it with access to your pywal colors. It uses the [Native Messaging API](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Native_messaging).
-
-**You should not use this version with the addon. This is a rewrite of the current daemon. Eventually, the daemon will be removed from the current [repository](https://github.com/Frewacom/Pywalfox) and replaced with this one. When this happens, the daemon will also be available to download from your package manager (either pip or the Arch AUR).**
+How to use?
+1. Download this pip packages `pywal` -> Gonna be ported to windows soon
+2. Clone this repo `git clone https://github.com/Gusted/pywalfox-native-win.git`
+3. Open setup.exe with ADMIN permission(It will ask by default if you forget)
+4. Make sure you use v1.5.4+ `https://github.com/Frewacom/Pywalfox/tree/v1.5.4`
