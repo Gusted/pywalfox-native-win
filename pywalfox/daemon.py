@@ -21,7 +21,6 @@ class Daemon:
         self.set_chrome_path()
         self.set_actions()
         self.messenger = Messenger(self.python_version)
-        self.socket_server = Server()
         self.is_running = False
 
     def set_actions(self):
@@ -156,7 +155,6 @@ class Daemon:
     def start(self):
         """Starts the daemon and listens for incoming messages."""
         self.is_running = True
-        self.start_socket_server()
         try:
             while True:
                 message = self.messenger.get_message()

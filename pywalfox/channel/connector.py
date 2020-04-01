@@ -7,7 +7,7 @@ class Connector:
     """Base class for UNIX-socket client and server."""
     def __init__(self):
         self.path = SOCKET_PATH
-        self.socket = socket.socket(socket.AF_UNIX, socket.SOCK_DGRAM)
+        self.socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
     def encode_message(self, message):
         """
